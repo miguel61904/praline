@@ -1,0 +1,105 @@
+.contenedorh{
+    display: flex;
+    justify-content: center;
+    background-color:aquamarine;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 260px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.ubicacion{
+    margin-top: 10px;
+    margin-right: 50px;
+}
+.ubicacion img{
+    height: 20px;
+    width: 20px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    font-family: oswald;
+}
+
+.encabezado{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/fondo3.png');
+
+}
+.enca{
+    height: 500px;
+}
+.contvent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img1{
+    height: 250px;
+    width: 200px;
+    margin: 20px;
+    font-size: 15px;
+}
+.img1 img{
+    height: 150px;
+    width: 150px;
+}
+.footer{
+    display: flex;
+    background-image: url("https://i1.wp.com/marbade.com/wp-content/uploads/2017/09/fondo-pagina-web.png?ssl=1");
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.li2{
+    display: none;
+}
+
+nav ul li a:hover + ul, nav ul li ul:hover {
+    display: block;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #191C26;
+
+}
+
+.li2{
+    margin: 0%;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    
+}
+.info{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.redes img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
