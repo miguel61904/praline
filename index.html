@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praline</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="./assets/img/praline.png">
     <link rel="stylesheet" href="./assets/css/estilos.css">
     <link rel="stylesheet" href="./assets/css/globales.css">
+    <link rel="stylesheet" href="./assets/css/carrito.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -33,12 +36,9 @@
     </div>
     <div class= encabezado>
     </div>
-    <div class="div-js">
          <div class = "contvent">
              <div class="img1"> 
-                <div class="img-venta">
                  <img class="item-image"  src="./assets/img/tortae12.png" alt="">
-                </div>
                  <h3 class="item-title">Torta de cumpleaños</h3>
                  <p>Deliciosa torda de chocolate con cerezas</p>
                  <h3 class="item-presio">19.000 $</h3>
@@ -49,9 +49,9 @@
                  <button class="addtocar">Añadir al carro</button>
              </div>
              <div class="img1"> 
-                <div class="img-venta">
+                
                 <img class="item-image"  src="./assets/img/tortae2.jpg" alt="">
-                </div>
+              
                 <h3 class="item-title">Torta de cumpleaños</h3>
                 <p>Deliciosa torda de chocolate con cerezas</p>
                 <h3 class="item-presio">19.000 $</h3>
@@ -62,9 +62,9 @@
                 <button class="addtocar">Añadir al carro</button>
             </div>
             <div class="img1"> 
-                <div class="img-venta">
+                
                 <img class="item-image"  src="./assets/img/tortae12.png" alt="">
-                </div>
+               
                 <h3 class="item-title" >Torta de cumpleaños</h3>
                 <p>Deliciosa torda de chocolate con cerezas</p>
                 <h3 class="item-presio">19.000 $</h3>
@@ -75,9 +75,9 @@
                 <button class="addtocar">Añadir al carro</button>
             </div>
             <div class="img1"> 
-                <div class="img-venta">
+               
                 <img class="item-image"  src="./assets/img/totae.jpg" alt="">
-                </div>
+                
                 <h3 class="item-title">Torta de cumpleaños</h3>
                 <p>Deliciosa torda de chocolate con cerezas</p>
                 <h3 class="item-presio">19.000 $</h3>
@@ -88,9 +88,9 @@
                 <button class="addtocar">Añadir al carro</button>
             </div>
             <div class="img1"> 
-                <div class="img-venta">
+                
                 <img class="item-image"  src="./assets/img/tortae12.png" alt="">
-                </div>
+                
                 <h3 class="item-title">Torta de cumpleaños</h3>
                 <p>Deliciosa torda de chocolate con cerezas</p>
                 <h3 class="item-presio">19.000 $</h3>
@@ -101,7 +101,6 @@
                 <button class="addtocar">Añadir al carro</button>
             </div>
          </div>
-    </div>
     <div class = "info">
         <div>
         <h2>Quienes somos</h2>
@@ -124,7 +123,7 @@
             </div>
             <div>
                 <h3>Contactenos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia natus iste ipsam sequi, iure voluptas id modi magnam doloremque doloribus, nostrum, enim obcaecati.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit. Quia natus iste ipsam sequi, <br> iure voluptas id modi magnam doloremque doloribus, <br> nostrum, enim obcaecati.</p>
             </div>
             <div class = "redes">
                 <h3>Redes sociales</h3>
@@ -134,9 +133,86 @@
             </div>
         </footer>
     </div>
-    <div class="shopping-cart-items shoppingCartItemsContainer">
-        
-    </div>
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+    
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0€</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
     <script src="./dom.js"></script>
 </body>
 </html>
