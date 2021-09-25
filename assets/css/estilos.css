@@ -53,10 +53,10 @@ nav ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    font-family: oswald;
 }
 .img1{
-    height: 250px;
-    width: 200px;
+    text-align: center;
     margin: 20px;
     font-size: 15px;
 }
@@ -68,7 +68,16 @@ nav ul{
     display: flex;
     background-image: url("https://i1.wp.com/marbade.com/wp-content/uploads/2017/09/fondo-pagina-web.png?ssl=1");
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;   
+}
+
+footer div{
+    margin: 20px;
+    margin-right: 50px;
+    margin-left: 150px;
+}
+footer li a{
+    color: black;
 }
 .li2{
     display: none;
@@ -92,10 +101,9 @@ nav a{
     
 }
 .info{
-    margin-top: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .redes img{
