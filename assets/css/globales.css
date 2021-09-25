@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -43,7 +42,15 @@ p{
     border: solid pink;
     background-color: white;
     color: black;
+    cursor: pointer;
+    transition: all 1s ease;
 }
+
+.btnventas:hover{
+    background: pink;
+    color: #fff !important;  
+}
+
 .img-venta{
     display: flex;
     justify-content: center;
